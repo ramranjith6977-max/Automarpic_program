@@ -1,0 +1,34 @@
+// Xylem is last and first of sum is equal to middle  number 
+
+class Xylem 
+{
+	public static void main(String[] args) 
+	{
+		int n = 111111;
+		int sum = 0;
+		int ld = n%10;  // take only last digit
+		n=n/10; // give remain digit execpt last digit
+		
+		while(n > 9)	
+		{
+			ld = n % 10;
+			sum = sum + ld;
+			n = n /10;
+		} 
+		
+		
+		System.out.println(sum);
+		int add =ld+n;
+		System.out.println(add);
+		if (sum == add)
+		{
+			System.out.println("yes");
+		}
+		else
+		{
+			System.out.println("no");
+		}
+	}
+	
+	
+}

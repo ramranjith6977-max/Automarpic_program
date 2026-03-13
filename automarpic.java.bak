@@ -1,0 +1,33 @@
+class automarpic 
+{
+	public static boolean automar(int n)
+	{
+		
+		int sq = n*n;
+	
+		while(n > 0)
+		{
+			int id1 = n / 10;
+			int id2 = sq / 10;
+			{
+			if (id1 == id2)
+			{
+			
+				n = n /10;
+			    sq = sq / 10;
+				return true;
+			}
+			
+			}
+			
+		}
+		return false;
+	}
+	
+	public static void main(String[] args) 
+	{
+		int n = 17
+		boolean val = automar(n);
+		System.out.println(val);
+	}
+}
